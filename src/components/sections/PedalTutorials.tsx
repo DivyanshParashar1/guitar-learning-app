@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Clock, Zap } from "lucide-react";
+import { useState } from "react";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const pedalTutorials = [
   {
@@ -11,7 +13,8 @@ const pedalTutorials = [
     duration: "12 min",
     type: "Drive",
     difficulty: "Beginner",
-    thumbnail: "🔥"
+    thumbnail: "🔥",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
   },
   {
     id: 2,
@@ -20,7 +23,8 @@ const pedalTutorials = [
     duration: "18 min",
     type: "Time-based",
     difficulty: "Intermediate",
-    thumbnail: "🌊"
+    thumbnail: "🌊",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
   },
   {
     id: 3,
@@ -29,7 +33,8 @@ const pedalTutorials = [
     duration: "16 min",
     type: "Ambient",
     difficulty: "Beginner",
-    thumbnail: "⛪"
+    thumbnail: "⛪",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
   },
   {
     id: 4,
@@ -38,7 +43,8 @@ const pedalTutorials = [
     duration: "25 min",
     type: "Modulation",
     difficulty: "Intermediate",
-    thumbnail: "🌀"
+    thumbnail: "🌀",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
   },
   {
     id: 5,
@@ -47,7 +53,8 @@ const pedalTutorials = [
     duration: "14 min",
     type: "Filter",
     difficulty: "Beginner",
-    thumbnail: "🎭"
+    thumbnail: "🎭",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
   },
   {
     id: 6,
@@ -56,7 +63,8 @@ const pedalTutorials = [
     duration: "28 min",
     type: "Advanced",
     difficulty: "Advanced",
-    thumbnail: "🎛️"
+    thumbnail: "🎛️",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
   }
 ];
 
@@ -73,7 +81,16 @@ const getTypeColor = (type: string) => {
 };
 
 const PedalTutorials = () => {
+  const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
+
   return (
+    <>
+      <VideoPlayer
+        isOpen={!!selectedVideo}
+        onClose={() => setSelectedVideo(null)}
+        videoUrl={selectedVideo?.url || ""}
+        title={selectedVideo?.title || ""}
+      />
     <section className="space-y-6">
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
@@ -114,7 +131,12 @@ const PedalTutorials = () => {
                 </div>
               </div>
 
-              <Button variant="musical" size="sm" className="w-full group-hover:scale-105 transition-transform duration-300">
+              <Button 
+                variant="musical" 
+                size="sm" 
+                className="w-full group-hover:scale-105 transition-transform duration-300"
+                onClick={() => setSelectedVideo({ url: tutorial.videoUrl, title: tutorial.title })}
+              >
                 <Play className="w-4 h-4" />
                 Watch Tutorial
               </Button>
@@ -123,6 +145,7 @@ const PedalTutorials = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 

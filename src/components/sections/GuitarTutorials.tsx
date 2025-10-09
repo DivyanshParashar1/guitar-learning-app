@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Clock, Star } from "lucide-react";
+import { useState } from "react";
+import VideoPlayer from "@/components/VideoPlayer";
 
 const tutorials = [
   {
@@ -11,7 +13,8 @@ const tutorials = [
     duration: "15 min",
     difficulty: "Beginner",
     rating: 4.8,
-    thumbnail: "🎸"
+    thumbnail: "🎸",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
   },
   {
     id: 2,
@@ -20,7 +23,8 @@ const tutorials = [
     duration: "22 min",
     difficulty: "Intermediate",
     rating: 4.9,
-    thumbnail: "🎵"
+    thumbnail: "🎵",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
   },
   {
     id: 3,
@@ -29,7 +33,8 @@ const tutorials = [
     duration: "18 min",
     difficulty: "Beginner",
     rating: 4.7,
-    thumbnail: "⚡"
+    thumbnail: "⚡",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
   },
   {
     id: 4,
@@ -38,7 +43,8 @@ const tutorials = [
     duration: "35 min",
     difficulty: "Advanced",
     rating: 4.9,
-    thumbnail: "🎶"
+    thumbnail: "🎶",
+    videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
   }
 ];
 
@@ -52,7 +58,16 @@ const getDifficultyColor = (difficulty: string) => {
 };
 
 const GuitarTutorials = () => {
+  const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
+
   return (
+    <>
+      <VideoPlayer
+        isOpen={!!selectedVideo}
+        onClose={() => setSelectedVideo(null)}
+        videoUrl={selectedVideo?.url || ""}
+        title={selectedVideo?.title || ""}
+      />
     <section className="space-y-6">
       <div className="text-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-hero bg-clip-text text-transparent">
@@ -93,7 +108,11 @@ const GuitarTutorials = () => {
                 </div>
               </div>
 
-              <Button variant="musical" className="w-full group-hover:scale-105 transition-transform duration-300">
+              <Button 
+                variant="musical" 
+                className="w-full group-hover:scale-105 transition-transform duration-300"
+                onClick={() => setSelectedVideo({ url: tutorial.videoUrl, title: tutorial.title })}
+              >
                 <Play className="w-4 h-4" />
                 Start Tutorial
               </Button>
@@ -102,6 +121,7 @@ const GuitarTutorials = () => {
         ))}
       </div>
     </section>
+    </>
   );
 };
 
