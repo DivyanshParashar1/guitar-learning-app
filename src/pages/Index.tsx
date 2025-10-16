@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import GuitarTutorials from "@/components/sections/GuitarTutorials";
 import PedalTutorials from "@/components/sections/PedalTutorials";
 import GuitarTuning from "@/components/sections/GuitarTuning";
+import GuitarTuner from "@/components/sections/GuitarTuner";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("tutorials");
@@ -27,6 +28,8 @@ const Index = () => {
         return <PedalTutorials />;
       case "tuning":
         return <GuitarTuning />;
+      case "tuner":
+        return <GuitarTuner />;
       default:
         return <GuitarTutorials />;
     }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Music, Radio, SlidersHorizontal } from "lucide-react";
+import { Music, Radio, SlidersHorizontal, Mic } from "lucide-react";
 
 interface NavigationProps {
   activeSection: string;
@@ -12,6 +12,7 @@ const Navigation = ({ activeSection, onSectionChange }: NavigationProps) => {
     { id: "tutorials", label: "Guitar Tutorials", icon: Music },
     { id: "pedals", label: "Pedal Tutorials", icon: Radio },
     { id: "tuning", label: "Guitar Tuning", icon: SlidersHorizontal },
+    { id: "tuner", label: "Guitar Tuner", icon: Mic },
   ];
 
   return (
