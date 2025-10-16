@@ -143,13 +143,12 @@ const GuitarTuner = () => {
         audio: {
           echoCancellation: false,
           autoGainControl: false,
-          noiseSuppression: false,
-          latency: 0
+          noiseSuppression: false
         } 
       });
       
       streamRef.current = stream;
-      audioContextRef.current = new (window.AudioContext || window.webkitAudioContext)();
+      audioContextRef.current = new (window.AudioContext || (window as any).webkitAudioContext)();
       analyserRef.current = audioContextRef.current.createAnalyser();
       microphoneRef.current = audioContextRef.current.createMediaStreamSource(stream);
       
