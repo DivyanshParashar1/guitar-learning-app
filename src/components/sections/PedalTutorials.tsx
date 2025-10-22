@@ -9,18 +9,18 @@ import NotesViewer from "@/components/NotesViewer";
 const pedalTutorials = [
   {
     id: 1,
-    title: "Dynamic Equalizer | Week 7",
-    description: "Understanding the difference and how to use these essential effects",
-    duration: "12 min",
+    title: "Pedal Overview",
+    description: "Learn the fundamental differences between distortion and overdrive pedals",
+    duration: "1 min 38 sec",
     type: "Drive",
     difficulty: "Beginner",
     thumbnail: "🔥",
-    videoUrl: "https://youtu.be/5shycYmNasc", // Distortion vs Overdrive
-    notes: `# Dynamic Equalizer | Week 7
+    videoUrl: "https://youtu.be/XdAOlLY4BjE?si=ACsEcyg8dlKcDXNa", // Distortion vs Overdrive
+    notes: `# Pedal Overview | Drive Effects Fundamentals
 
-## What is a Dynamic Equalizer?
+## Understanding Drive Pedals
 
-A dynamic equalizer (often called distortion or overdrive) is one of the most essential guitar effects. It shapes your tone by adding harmonic content and saturation to your signal.
+Drive pedals (distortion and overdrive) are among the most essential guitar effects. They shape your tone by adding harmonic content and saturation to your signal, creating everything from subtle warmth to heavy distortion.
 
 ## Types of Drive Pedals
 
@@ -117,40 +117,203 @@ Combine multiple drive pedals for complex tones:
   },
   {
     id: 2,
-    title: "Delay & Echo Effects",
+    title: "Distortion Effect",
+    description: "Master aggressive distortion tones for rock and metal music",
+    duration: "2 min",
+    type: "Drive",
+    difficulty: "Beginner",
+    thumbnail: "�",
+    videoUrl: "https://youtu.be/oROq_T-ZbS8?si=gnzqmf7VKQ_kueu9", // Delay pedal tutorial
+    notes: `# Distortion Effect Fundamentals
+
+## Understanding Distortion
+
+Distortion pedals create aggressive, saturated tones perfect for rock, metal, and punk music. They compress your signal and add harmonic content for powerful, sustaining sounds.
+
+## Types of Distortion
+
+### Classic Distortion
+- **Sound**: Aggressive, compressed, harmonically rich
+- **Best for**: Hard rock, metal, punk
+- **Controls**: Gain, tone, volume
+- **Famous**: Boss DS-1, Pro Co RAT
+
+### High-Gain Distortion
+- **Sound**: Heavy saturation, tight low end
+- **Best for**: Metal, modern rock
+- **Features**: Multiple gain stages, EQ sections
+- **Famous**: Boss MT-2, Digitech Metal Master
+
+### Vintage Distortion
+- **Sound**: Warm, musical, tube-like
+- **Best for**: Classic rock, blues rock
+- **Character**: Less compressed, more dynamic
+- **Famous**: MXR Distortion+, DOD 250
+
+## Essential Controls
+
+### Gain/Drive
+Controls the amount of distortion:
+- **Low settings**: Light crunch, retains dynamics
+- **Medium settings**: Classic rock distortion
+- **High settings**: Heavy metal saturation
+
+### Tone/EQ
+Shapes the frequency response:
+- **Low**: Dark, thick, muddy character
+- **Medium**: Balanced, musical tone
+- **High**: Bright, cutting, aggressive
+
+### Volume/Level
+Sets the output level:
+- **Unity gain**: Same volume as bypass
+- **Boost**: Louder for solos and emphasis
+- **Cut**: Lower for rhythm sections
+
+## Musical Applications
+
+### Rock Rhythm Guitar
+Perfect for power chords and riffs:
+- **Gain**: Medium to high settings
+- **Tone**: Balanced, slight mid emphasis
+- **Volume**: Unity gain or slight boost
+
+### Metal Lead Guitar
+Saturated tones for solos:
+- **Gain**: High settings for sustain
+- **Tone**: Bright enough to cut through mix
+- **Volume**: Boosted for solos
+
+### Punk Power Chords
+Aggressive, in-your-face sound:
+- **Gain**: High, but not muddy
+- **Tone**: Bright and cutting
+- **Volume**: Consistent with rhythm parts
+
+## Advanced Techniques
+
+### Distortion Stacking
+Combining multiple distortion pedals:
+- **Light + Heavy**: Smooth overdrive into heavy distortion
+- **Different characters**: Mix vintage and modern tones
+- **Gain staging**: Control overall saturation levels
+
+### EQ Shaping
+Using tone controls effectively:
+- **Scoop mids**: Modern metal sound (use sparingly)
+- **Boost mids**: Cut through dense mixes
+- **Roll off highs**: Tame harsh frequencies
+
+### Dynamic Playing
+Using pick attack to control distortion:
+- **Light picking**: Cleaner, more dynamic
+- **Heavy picking**: Full saturation and compression
+- **Varies with guitar volume**: Clean up with volume knob
+
+## Signal Chain Placement
+
+### Standard Position
+\`\`\`
+Guitar → Distortion → Modulation → Delay → Reverb → Amp
+\`\`\`
+
+### Before Clean Boost
+\`\`\`
+Guitar → Distortion → Clean Boost → Amp
+\`\`\`
+
+## Famous Distortion Users
+- **Kurt Cobain** (Nirvana): Boss DS-1 for grunge tones
+- **Metallica**: Multiple distortions for metal crunch
+- **The Ramones**: Simple distortion for punk power
+- **Black Sabbath**: Heavy distortion for doom metal
+
+## Distortion Tips
+
+### Amp Interaction
+Different amps respond differently to distortion pedals:
+1. **Clean amp**: Distortion provides all the gain
+2. **Driven amp**: Distortion adds more saturation
+3. **High-gain amp**: Use distortion as a boost
+
+### Noise Management
+> **Important**: High-gain distortion can introduce noise. Use a noise gate when needed!
+
+### Creative Uses
+- **Rhythm emphasis**: Boost certain chord hits
+- **Solo definition**: Cut through dense mixes
+- **Texture creation**: Add grit to clean passages
+
+## Common Settings
+
+### Classic Rock Crunch
+- **Gain**: 50-60%
+- **Tone**: 60-70%
+- **Volume**: Unity gain
+
+### Modern Metal
+- **Gain**: 75-85%
+- **Tone**: 45-55% (darker for chunk)
+- **Volume**: Unity or slight boost
+
+### Punk Power
+- **Gain**: 65-75%
+- **Tone**: 70-80% (bright and cutting)
+- **Volume**: Consistent level
+
+Remember: Distortion is about power and aggression. Use it to add energy and drive to your playing!
+`
+  },
+  {
+    id: 3,
+    title: "Delay Effect",
     description: "Create atmospheric soundscapes with delay and echo pedals",
-    duration: "18 min",
+    duration: "2 min",
     type: "Time-based",
     difficulty: "Intermediate",
     thumbnail: "🌊",
-    videoUrl: "https://www.youtube.com/watch?v=CeJzKQvAzLE", // Delay pedal tutorial
-    notes: `# Delay & Echo Effects
+    videoUrl: "https://youtu.be/UaCQGeIVfYE?si=2euRqapPLMlGq09f", // Reverb pedal basics
+    notes: `# Delay Effect Fundamentals
 
-## Understanding Delay
+## What is Delay?
 
-Delay creates echoes of your original signal, adding depth, space, and rhythmic interest to your playing.
+Delay creates echoes of your original signal, adding depth, space, and rhythmic interest to your playing. It's one of the most versatile and musical effects available.
 
 ## Types of Delay
 
 ### Digital Delay
-- **Sound**: Clean, precise repeats
+- **Source**: Digital processing chips
+- **Sound**: Clean, precise, accurate repeats
 - **Best for**: Modern music, precise timing
-- **Controls**: Time, feedback, mix
+- **Character**: Crystal clear repeats
 
 ### Analog Delay
+- **Source**: Analog circuitry (BBD chips)
 - **Sound**: Warm, slightly degraded repeats
 - **Best for**: Vintage tones, musical warmth
-- **Famous**: Boss DM-2, MXR Carbon Copy
+- **Character**: Each repeat gets darker
 
 ### Tape Echo
+- **Source**: Physical tape mechanism
 - **Sound**: Warm, modulated, vintage character
 - **Best for**: Classic rock, ambient music
-- **Famous**: Echoplex, Space Echo
+- **Character**: Natural modulation and saturation
+
+### Multi-Tap Delay
+- **Source**: Digital or analog processing
+- **Sound**: Multiple delay lines with different timings
+- **Best for**: Complex rhythmic patterns
+- **Character**: Polyrhythmic echoes
+
+### Reverse Delay
+- **Sound**: Backwards echoes that build up to notes
+- **Best for**: Psychedelic effects, atmospheric passages
+- **Character**: Creates anticipation and tension
 
 ## Essential Controls
 
 ### Time/Delay
-Sets the gap between repeats:
+Sets the gap between original signal and repeats:
 - **Short (20-100ms)**: Slap-back echo
 - **Medium (100-400ms)**: Rhythmic repeats
 - **Long (400ms+)**: Ambient washes
@@ -158,238 +321,66 @@ Sets the gap between repeats:
 ### Feedback/Repeats
 Controls how many echoes you hear:
 - **Low (1-3 repeats)**: Subtle enhancement
-- **Medium (4-8 repeats)**: Musical repeats
-- **High (9+ repeats)**: Self-oscillation
+- **Medium (4-8 repeats)**: Musical, noticeable repeats
+- **High (9+ repeats)**: Self-oscillation territory
 
 ### Mix/Level
-Balances dry and wet signal:
+Balance of dry and wet signal:
 - **10-20%**: Subtle thickening
 - **30-50%**: Noticeable repeats
 - **50%+**: Obvious effect
 
+### Modulation (if available)
+Adds movement to the repeats:
+- **Rate**: Speed of the modulation
+- **Depth**: Amount of pitch variation
+- **Result**: Vintage tape echo character
+
 ## Musical Applications
 
-### Rhythmic Delay
+### Rhythmic Enhancement
 Match delay time to song tempo:
+- **Quarter notes**: Obvious rhythmic support
+- **Eighth notes**: Faster, more active feel
+- **Dotted eighths**: Popular in modern rock/pop
 
-#### Quarter Note Delays
-\`\`\`
-BPM    Time (ms)
-60     1000
-120    500
-140    428
-\`\`\`
-
-#### Dotted Eighth Notes
-Popular in modern music:
-\`\`\`
-BPM    Time (ms)
-120    750
-140    643
-\`\`\`
-
-### Ambient Delay
-Long, reverberant delays for atmosphere:
-- **Time**: 600ms - 2 seconds
+### Ambient Textures
+Long, atmospheric delays:
+- **Time**: 500ms - 2 seconds
 - **Feedback**: High (but not self-oscillating)
 - **Mix**: 40-60%
 
-## Advanced Techniques
+### Solo Enhancement
+Add space and interest to lead lines:
+- **Time**: Musical intervals (quarter/eighth notes)
+- **Feedback**: Medium (3-5 repeats)
+- **Mix**: 25-40%
+
+## Advanced Delay Types
 
 ### Ping-Pong Delay
-Alternates between left and right channels:
+Alternates echoes between left and right channels:
 - Creates wide stereo image
-- Great for headphones/studio
+- Great for headphone listening
 - Adds movement to static parts
 
-### Reverse Delay
-Plays echoes backwards:
-- Psychedelic effect
-- Great for atmospheric passages
-- Often combined with reverb
+### Multi-Tap Delay
+Multiple delay lines with different times:
+- Complex rhythmic patterns
+- Polyrhythmic effects
+- Dense, layered textures
 
 ### Modulated Delay
-Adds chorus/vibrato to repeats:
-- **Rate**: How fast the modulation
-- **Depth**: How much pitch variation
-- **Creates**: Vintage tape echo feel
+Adds pitch variation to repeats:
+- **Chorus-like**: Subtle pitch modulation
+- **Vibrato-like**: More obvious pitch variation
+- **Tape-like**: Mimics vintage tape echo units
 
-## Signal Chain Placement
-
-### Standard Position
-\`\`\`
-Guitar → Drive → Modulation → Delay → Reverb → Amp
-\`\`\`
-
-### Effects Loop
-\`\`\`
-Guitar → Drive → Amp Input
-Amp Send → Delay → Reverb → Amp Return
-\`\`\`
-
-## Famous Delay Users
-- **The Edge** (U2): Dotted eighth note delays
-- **David Gilmour** (Pink Floyd): Long ambient delays
-- **Eddie Van Halen**: Short slap-back delay
-- **Alex Lifeson** (Rush): Complex delay patterns
-
-## Delay Tips
-
-### Timing Practice
-1. Set delay to quarter notes
-2. Play simple melodies
-3. Let delay create harmony
-4. Practice playing with the repeats
-
-### Feedback Control
-> **Warning**: High feedback can create runaway oscillation. Practice controlling this effect!
-
-### Creative Uses
-- **Layering**: Build complex soundscapes
-- **Rhythmic patterns**: Create polyrhythms
-- **Solo enhancement**: Add space between phrases
-
-## Common Settings
-
-### Classic Rock Slap-back
-- **Time**: 80-120ms
-- **Feedback**: 1-2 repeats
-- **Mix**: 15-25%
-
-### Modern Ambient
-- **Time**: 500-800ms
-- **Feedback**: 60-70%
-- **Mix**: 40-50%
-
-### Country/Rockabilly
-- **Time**: 120-150ms
-- **Feedback**: 1 repeat
-- **Mix**: 20-30%
-
-Remember: Delay is about space and rhythm. Use it to enhance your playing, not overwhelm it!
-`
-  },
-  {
-    id: 3,
-    title: "Reverb Fundamentals",
-    description: "From subtle room reverb to massive cathedral sounds",
-    duration: "16 min",
-    type: "Ambient",
-    difficulty: "Beginner",
-    thumbnail: "⛪",
-    videoUrl: "https://www.youtube.com/watch?v=1cCuJbnPEco", // Reverb pedal basics
-    notes: `# Reverb Fundamentals
-
-## What is Reverb?
-
-Reverb simulates the natural reflections of sound in physical spaces, from small rooms to massive cathedrals.
-
-## Types of Reverb
-
-### Spring Reverb
-- **Source**: Metal springs in amplifiers
-- **Sound**: Bright, metallic, vintage
-- **Best for**: Surf music, classic rock
-- **Character**: "Boing" sound when hit
-
-### Plate Reverb
-- **Source**: Large metal plates in studios
-- **Sound**: Smooth, dense, musical
-- **Best for**: Vocals, any instrument
-- **Character**: No early reflections
-
-### Hall Reverb
-- **Source**: Concert halls and large spaces
-- **Sound**: Natural, spacious, gradual decay
-- **Best for**: Ballads, ambient music
-- **Character**: Long, smooth tail
-
-### Room Reverb
-- **Source**: Small to medium rooms
-- **Sound**: Intimate, natural, controlled
-- **Best for**: Adding subtle space
-- **Character**: Quick decay, natural
-
-### Digital/Algorithmic
-- **Source**: Computer algorithms
-- **Sound**: Various simulations and creative spaces
-- **Best for**: Flexibility and unique sounds
-- **Character**: Depends on algorithm
-
-## Essential Controls
-
-### Decay Time
-How long the reverb lasts:
-- **Short (0.5-1.5s)**: Room reverb
-- **Medium (1.5-3s)**: Hall reverb
-- **Long (3s+)**: Cathedral/ambient
-
-### Pre-delay
-Gap between dry signal and reverb:
-- **0-20ms**: Intimate, close sound
-- **20-50ms**: Natural room feel
-- **50ms+**: Obvious separation
-
-### Mix/Level
-Balance of dry and wet signal:
-- **10-20%**: Subtle enhancement
-- **30-40%**: Noticeable space
-- **50%+**: Obvious effect
-
-### Tone/EQ
-Shapes the reverb frequency response:
-- **Dark**: Warm, vintage character
-- **Bright**: Modern, airy feel
-- **Filtered**: Removes harsh frequencies
-
-## Musical Applications
-
-### Subtle Enhancement
-Add space without being obvious:
-- **Type**: Room or small hall
-- **Decay**: 1-2 seconds
-- **Mix**: 15-25%
-- **Pre-delay**: 10-30ms
-
-### Ballad Reverb
-Lush, emotional space:
-- **Type**: Hall or plate
-- **Decay**: 2-4 seconds
-- **Mix**: 30-50%
-- **Pre-delay**: 30-50ms
-
-### Ambient Soundscapes
-Massive, ethereal spaces:
-- **Type**: Hall or shimmer
-- **Decay**: 5+ seconds
-- **Mix**: 40-80%
-- **Pre-delay**: Various
-
-## Advanced Reverb Types
-
-### Shimmer Reverb
-Adds octave-up harmonies:
-- Creates "angelic" sound
-- Great for ambient music
-- Often combined with delay
-
-### Reverse Reverb
-Builds up before the note:
-- Psychedelic effect
-- Creates anticipation
-- Often used on drums/vocals
-
-### Gated Reverb
-Cuts off abruptly:
-- 80s drum sound
-- Punchy, controlled
-- Great for rhythmic parts
-
-### Modulated Reverb
-Adds chorus/vibrato to the tail:
-- Vintage character
-- Movement and life
-- Prevents static sound
+### Reverse Delay
+Plays the delayed signal backwards:
+- Psychedelic, otherworldly effects
+- Great for atmospheric passages
+- Often combined with reverb
 
 ## Signal Chain Placement
 
@@ -405,88 +396,96 @@ Amp Send → Delay → Reverb → Amp Return
 \`\`\`
 
 Benefits of effects loop:
-- Cleaner reverb signal
-- Better interaction with amp
-- More control over wet/dry mix
+- Cleaner delay signal
+- Better interaction with preamp distortion
+- More control over wet/dry balance
 
-## Reverb Etiquette
+## Delay Timing Guide
 
-### Live Performance
-- **Don't overdo it**: Less is often more
-- **Consider the venue**: Some rooms are naturally reverberant
-- **Genre appropriate**: Match reverb to musical style
+### BPM to Milliseconds
+Calculate delay times for musical intervals:
 
-### Recording
-- **Track dry**: Add reverb during mixing
-- **Use sends**: Share reverb between instruments
-- **EQ the reverb**: Cut muddy frequencies
+#### Quarter Note Delays
+\`\`\`
+BPM    Time (ms)
+60     1000
+90     667
+120    500
+140    428
+\`\`\`
 
-## Common Reverb Settings
+#### Dotted Eighth Notes
+Popular in modern music:
+\`\`\`
+BPM    Time (ms)
+90     1000
+120    750
+140    643
+\`\`\`
 
-### Clean Guitar - Subtle
-- **Type**: Room
-- **Decay**: 1.2s
-- **Mix**: 20%
-- **Tone**: Neutral
+## Common Delay Settings
 
-### Lead Guitar - Spacious
-- **Type**: Hall
-- **Decay**: 2.5s
-- **Mix**: 35%
-- **Tone**: Slightly dark
+### Classic Rock Slapback
+- **Time**: 80-120ms
+- **Feedback**: 1-2 repeats
+- **Mix**: 15-25%
 
-### Ambient - Ethereal
-- **Type**: Shimmer Hall
-- **Decay**: 6s
-- **Mix**: 60%
-- **Tone**: Bright
+### Modern Ambient
+- **Time**: 500-800ms
+- **Feedback**: 60-70%
+- **Mix**: 40-50%
 
-## Famous Reverb Users
-- **Dick Dale**: Spring reverb surf sound
-- **David Gilmour**: Long hall reverbs
-- **The Edge**: Combination of delay and reverb
-- **Jonny Greenwood**: Creative reverb textures
+### U2-Style Edge Delay
+- **Time**: Dotted eighth note
+- **Feedback**: 4-6 repeats
+- **Mix**: 30-40%
+
+## Famous Delay Users
+- **The Edge** (U2): Dotted eighth note delays defining songs
+- **David Gilmour** (Pink Floyd): Long ambient delays for solos
+- **Eddie Van Halen**: Short slapback delay for thickness
+- **Alex Lifeson** (Rush): Complex delay patterns and textures
 
 ## Pro Tips
 
-> **Less is More**: Start with subtle settings and add more as needed.
+> **Musical Timing**: Always set delay times to musical subdivisions that fit the song.
 
-### Reverb and Delay
-When using both:
-1. Set delay first
-2. Add reverb to taste
-3. Reverb should complement, not compete
+### Delay and Reverb
+When using both effects:
+1. Set delay time first
+2. Add reverb for space
+3. Keep reverb subtle to maintain delay clarity
 
-### EQ Your Reverb
-- **High-pass filter**: Remove muddy low end
-- **Low-pass filter**: Tame harsh highs
-- **Mid-cut**: Prevent frequency buildup
+### Feedback Control
+- **Sweet spot**: Usually between 3-7 repeats
+- **Self-oscillation**: Can be musical when controlled
+- **Kill switch**: Have a way to stop runaway feedback
 
 ### Creative Techniques
-- **Reverb into drive**: Unusual but interesting
-- **Reverse reverb swells**: Build tension
-- **Gated reverb on rhythm**: Add punch
+- **Delay throws**: Occasional delay hits for emphasis
+- **Layering**: Build complex textures with multiple delays
+- **Expression control**: Real-time control of parameters
 
-Remember: Reverb is about creating the illusion of space. Use it to place your guitar in the sonic landscape!
+Remember: Delay is about space and rhythm. Use it to enhance your playing and create musical interest!
 
-![Cathedral Interior](https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&q=80)
-*Natural reverb in a cathedral space*
+![Delay Pedal Setup](https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80)
+*Professional delay pedal in a studio setup*
 `
   },
   {
     id: 4,
-    title: "Modulation Magic",
-    description: "Chorus, phaser, and flanger effects for dynamic sounds",
-    duration: "25 min",
-    type: "Modulation",
+    title: "Dynamic Equalizer",
+    description: "Master EQ and frequency shaping for perfect tone control",
+    duration: "2 min",
+    type: "EQ",
     difficulty: "Intermediate",
-    thumbnail: "🌀",
-    videoUrl: "https://www.youtube.com/watch?v=2qp1YRe1N5w", // Modulation effects
-    notes: `# Modulation Magic
+    thumbnail: "📊",
+    videoUrl: "https://youtu.be/pV16BKskq3I?si=pFoelJ2FSSPeoBam", // Modulation effects
+    notes: `# Dynamic Equalizer Fundamentals
 
-## Understanding Modulation
+## Understanding Dynamic EQ
 
-Modulation effects add movement and texture to your guitar tone by varying parameters over time, creating everything from subtle shimmer to dramatic sweeps.
+A dynamic equalizer is an advanced EQ that responds to your playing dynamics, automatically adjusting frequency response based on signal level and content for optimal tone shaping.
 
 ## Types of Modulation
 
@@ -712,544 +711,544 @@ Sync modulation to song tempo:
 Remember: Modulation effects are about adding life and movement to your sound. Use them to create interest and texture, but always serve the music first!
 `
   },
-  {
-    id: 5,
-    title: "Wah & Filter Pedals",
-    description: "Expressive tone shaping with wah and filter effects",
-    duration: "14 min",
-    type: "Filter",
-    difficulty: "Beginner",
-    thumbnail: "🎭",
-    videoUrl: "https://www.youtube.com/watch?v=jZqJXFMhP4s", // Wah pedal tutorial
-    notes: `# Wah & Filter Pedals
-
-## Understanding Wah Pedals
-
-The wah pedal is one of the most expressive effects in guitar playing, allowing real-time control over your tone's frequency response.
-
-## How Wah Pedals Work
-
-### Basic Principle
-- **Filter sweep**: Emphasizes different frequencies
-- **Foot control**: Real-time expression
-- **Vocal quality**: Mimics human vocal formants
-
-### Frequency Range
-- **Heel down**: Emphasizes bass frequencies
-- **Toe down**: Emphasizes treble frequencies
-- **Middle position**: Balanced, often parked for fixed EQ
-
-## Types of Wah Pedals
-
-### Vintage-Style Wah
-- **Sound**: Vocal, organic, slightly dark
-- **Famous**: Original Cry Baby, Vox V847
-- **Best for**: Classic rock, blues, vintage tones
-
-### Modern Wah
-- **Sound**: Wider sweep, more extreme range
-- **Features**: Often have multiple modes
-- **Best for**: Modern rock, metal, experimental
-
-### Specific Models
-#### Dunlop Cry Baby
-- **Most popular**: Industry standard
-- **Variations**: GCB95, 535Q (adjustable)
-- **Sound**: Classic, reliable, familiar
-
-#### Vox V847
-- **Vintage spec**: Based on original Italian design
-- **Sound**: Slightly different sweep than Cry Baby
-- **Character**: Smoother, less aggressive
-
-## Wah Techniques
-
-### Basic Techniques
-
-#### Full Sweep
-- **Motion**: Heel to toe
-- **Sound**: Classic "wah" vocal sound
-- **Usage**: Emphasis, expression
-
-#### Parked Wah
-- **Position**: Fixed at specific point
-- **Sound**: EQ boost at chosen frequency
-- **Usage**: Lead tones, fixed filter effect
-
-#### Slow Sweep
-- **Motion**: Gradual heel-to-toe movement
-- **Sound**: Smooth filter sweep
-- **Usage**: Atmospheric, building tension
-
-### Advanced Techniques
-
-#### Rhythmic Wah
-Match wah movement to song rhythm:
-- **On the beat**: Emphasize strong beats
-- **Off-beat**: Syncopated, funky feel
-- **Double-time**: Fast rhythmic patterns
-
-#### Percussive Wah
-Quick, sharp movements:
-- **Heel stomp**: Emphasis on low frequencies
-- **Toe tap**: Bright, cutting sound
-- **Combination**: Rhythmic patterns
-
-#### Wah + Picking
-Coordinate with picking technique:
-- **Attack + wah**: Emphasize note attacks
-- **Sustained + sweep**: Long notes with movement
-- **Muted + rhythmic**: Percussive combinations
-
-## Signal Chain Placement
-
-### Traditional Position
-\`\`\`
-Guitar → Wah → Drive → Modulation → Delay → Reverb → Amp
-\`\`\`
-
-Benefits:
-- Most natural, responsive feel
-- Best interaction with guitar signal
-- Traditional sound most people expect
-
-### After Drive (Alternative)
-\`\`\`
-Guitar → Drive → Wah → Modulation → Delay → Reverb → Amp
-\`\`\`
-
-Benefits:
-- Smoother, less aggressive sweep
-- Different tonal character
-- Some players prefer this sound
-
-## Musical Applications
-
-### Funk Guitar
-Essential for classic funk:
-- **Technique**: Rhythmic, percussive
-- **Pattern**: Match to drum patterns
-- **Examples**: "Shaft" theme, Parliament-Funkadelic
-
-### Classic Rock Solos
-Expressive lead guitar:
-- **Technique**: Melodic sweeps
-- **Usage**: Emphasize important notes
-- **Examples**: Hendrix, Clapton, Page
-
-### Blues Expression
-Vocal-like phrasing:
-- **Technique**: Slow, melodic movements
-- **Usage**: Bend notes while sweeping
-- **Goal**: Mimic human voice inflections
-
-### Modern Metal
-Aggressive, precise movements:
-- **Technique**: Fast, rhythmic patterns
-- **Usage**: Accent rhythmic patterns
-- **Examples**: Kirk Hammett, Tom Morello
-
-## Famous Wah Players
-
-### Jimi Hendrix
-- **Pioneer**: Popularized wah pedal use
-- **Technique**: Full sweeps, rhythmic patterns
-- **Songs**: "Voodoo Child," "White Room"
-
-### Kirk Hammett (Metallica)
-- **Style**: Fast, aggressive, rhythmic
-- **Technique**: Precise, controlled movements
-- **Songs**: "Enter Sandman," "One"
-
-### David Gilmour (Pink Floyd)
-- **Style**: Melodic, atmospheric
-- **Technique**: Slow, musical sweeps
-- **Songs**: "Money," "Time"
-
-## Wah Settings and Modifications
-
-### Internal Adjustments
-Many wahs have internal controls:
-- **Vocal control**: Adjusts sweep range
-- **Bias control**: Changes center frequency
-- **Volume control**: Matches bypass level
-
-### Common Modifications
-#### True Bypass
-- **Benefit**: Better signal when off
-- **Install**: Professional modification
-- **Result**: Cleaner overall signal
-
-#### LED Indicator
-- **Benefit**: Shows when effect is on
-- **Install**: Simple modification
-- **Useful**: Dark stages, pedalboard setups
-
-## Filter Pedals (Related Effects)
-
-### Auto-Wah/Envelope Filter
-Automatic wah response to playing dynamics:
-- **Control**: Pick attack triggers filter
-- **Sound**: Funky, responsive
-- **Famous**: Mutron III, Boss AW-3
-
-### Talk Box
-Articulates words through guitar:
-- **How it works**: Speaker drives tube to mouth
-- **Sound**: Robot/vocoder effect
-- **Famous**: Peter Frampton, Roger Troutman
-
-### Vocal Formant Filter
-Creates vowel sounds:
-- **Control**: Often expression pedal
-- **Sound**: "Oooh" to "Ahhh" vocal sounds
-- **Usage**: Special effects, experimental
-
-## Practice Exercises
-
-### Basic Coordination
-1. **Simple riffs**: Play easy patterns while wah sweeping
-2. **Chord progressions**: Practice rhythm guitar + wah
-3. **Scale runs**: Combine scales with wah movement
-
-### Rhythmic Training
-1. **Match metronome**: Wah movement on beat
-2. **Subdivision practice**: Quarter, eighth, sixteenth notes
-3. **Polyrhythms**: Wah in different time signatures
-
-### Expression Development
-1. **Dynamic control**: Vary sweep speed and intensity
-2. **Musical phrasing**: Make wah movement melodic
-3. **Song application**: Add wah to favorite songs
-
-## Common Problems and Solutions
-
-### Issues
-- **Volume drop**: When wah is engaged
-- **Scratchy pot**: Dirty volume control
-- **Inconsistent sweep**: Worn gear mechanism
-
-### Solutions
-- **Volume matching**: Internal adjustment or modification
-- **Cleaning**: Contact cleaner on potentiometer
-- **Maintenance**: Regular cleaning and lubrication
-
-## Pro Tips
-
-> **Less is More**: Don't use wah on every song. Save it for maximum impact.
-
-### Musical Guidelines
-- **Serve the song**: Use wah musically, not just for effect
-- **Practice timing**: Coordinate with rhythm section
-- **Volume control**: Make sure levels match bypass
-- **Genre appropriate**: Consider style and context
-
-### Creative Ideas
-- **Backwards wah**: Record and reverse for unique sounds
-- **Multiple wahs**: Different voices for different parts
-- **Expression pedal**: Control other parameters via MIDI
-- **Wah + pitch**: Combine with pitch bending for extreme effects
-
-Remember: The wah pedal is an instrument itself. Master its expressive capabilities to add a new dimension to your guitar playing!
-
-![Wah Pedal in Action](https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=800&q=80)
-*Classic wah pedal setup on a professional pedalboard*
-`
-  },
-  {
-    id: 6,
-    title: "Stacking Pedals",
-    description: "Advanced techniques for combining multiple effects pedals",
-    duration: "28 min",
-    type: "Advanced",
-    difficulty: "Advanced",
-    thumbnail: "🎛️",
-    videoUrl: "https://www.youtube.com/watch?v=HNsQ3ckLt3k", // Pedal stacking guide
-    notes: `# Stacking Pedals
-
-## The Art of Pedal Stacking
-
-Pedal stacking is the practice of combining multiple effects to create complex, unique tones that single pedals cannot achieve alone.
-
-## Signal Chain Fundamentals
-
-### Basic Signal Flow
-Understanding signal path is crucial for effective stacking:
-
-\`\`\`
-Guitar → Effects Chain → Amplifier → Speaker
-\`\`\`
-
-### Standard Pedal Order
-\`\`\`
-Guitar → Tuner → Wah → Compression → Drive/Distortion → 
-EQ → Modulation → Delay → Reverb → Amp
-\`\`\`
-
-### Why Order Matters
-Each pedal affects the signal feeding into the next:
-- **Early effects**: Shape the core tone
-- **Later effects**: Add texture and space
-- **Wrong order**: Can create unwanted noise or poor interaction
-
-## Drive Pedal Stacking
-
-### Classic Combinations
-
-#### Light Overdrive + Heavy Distortion
-\`\`\`
-Guitar → Light OD (always on) → Heavy Distortion (solo boost) → Amp
-\`\`\`
-
-**Benefits:**
-- Consistent light overdrive for rhythm
-- Heavy distortion for solos
-- Smoother transition between clean and dirty
-
-#### Tube Screamer + Amp Distortion
-\`\`\`
-Guitar → Tube Screamer → Already-driven amp
-\`\`\`
-
-**Purpose:**
-- Tightens low end
-- Boosts mids for cut
-- Adds compression and sustain
-
-### Advanced Drive Stacking
-
-#### Three-Tiered Approach
-\`\`\`
-Guitar → Clean Boost → Light OD → Heavy Distortion → Amp
-\`\`\`
-
-**Usage:**
-1. **Clean boost**: Always on, slight enhancement
-2. **Light OD**: Rhythm sections
-3. **Heavy distortion**: Lead solos
-
-#### Fuzz + Overdrive
-\`\`\`
-Guitar → Fuzz → Overdrive → Amp
-\`\`\`
-
-**Result:**
-- Overdrive smooths harsh fuzz edges
-- Maintains fuzz character with more control
-- Popular in psych/garage rock
-
-## Modulation Stacking
-
-### Time-Based Effects
-Multiple delays and reverbs for complex textures:
-
-#### Dual Delay Setup
-\`\`\`
-Guitar → Short Delay (120ms) → Long Delay (400ms) → Reverb → Amp
-\`\`\`
-
-**Effect:**
-- Short delay: Rhythmic enhancement
-- Long delay: Atmospheric wash
-- Reverb: Final spatial enhancement
-
-#### Ping-Pong + Hall Reverb
-\`\`\`
-Guitar → Ping-Pong Delay → Hall Reverb → Amp
-\`\`\`
-
-**Result:**
-- Wide stereo image from ping-pong
-- Natural space from reverb
-- Complex, three-dimensional sound
-
-### Modulation Combinations
-
-#### Chorus + Delay + Reverb
-The classic clean guitar stack:
-\`\`\`
-Guitar → Chorus → Delay → Reverb → Amp
-\`\`\`
-
-**Character:**
-- Chorus: Width and shimmer
-- Delay: Rhythmic interest
-- Reverb: Spatial depth
-
-## Creative Stacking Ideas
-
-### Unconventional Orders
-
-#### Reverb Before Drive
-\`\`\`
-Guitar → Reverb → Overdrive → Amp
-\`\`\`
-
-**Effect:**
-- Drives the reverb signal
-- Creates compressed, sustained ambience
-- Unique, atmospheric character
-
-#### Delay Before Drive
-\`\`\`
-Guitar → Delay → Distortion → Amp
-\`\`\`
-
-**Result:**
-- Distorts the delayed signal
-- Creates rhythmic, aggressive textures
-- Popular in industrial/experimental music
-
-### Parallel Processing
-Running effects in parallel rather than series:
-
-#### Wet/Dry Setup
-\`\`\`
-Guitar → Splitter → Path A (Clean) → Mixer → Amp
-                  → Path B (Effects) →
-\`\`\`
-
-**Benefits:**
-- Maintains note clarity
-- Adds effects without muddying core tone
-- Professional studio technique
-
-## Effects Loop Usage
-
-### Amp Effects Loop
-\`\`\`
-Guitar → Drive → Amp Input
-Amp Send → Modulation → Delay → Reverb → Amp Return
-\`\`\`
-
-**Advantages:**
-- Time-based effects stay clean
-- Better interaction with preamp distortion
-- More control over wet/dry balance
-
-### When to Use Effects Loop
-- **Use loop for**: Delay, reverb, some modulation
-- **Use front for**: Drive, wah, compression, some modulation
-- **Experiment**: Every amp and player is different
-
-## Advanced Stacking Techniques
-
-### Switching Systems
-
-#### Loop Switchers
-Control multiple pedal chains:
-- **A/B switching**: Choose between different effect chains
-- **Blending**: Mix multiple chains together
-- **Programmable**: Store preset combinations
-
-#### MIDI Control
-Synchronize multiple effects:
-- **Tempo sync**: All delays match song tempo
-- **Program changes**: Switch entire effect setups
-- **Expression control**: Control multiple parameters
-
-### Gain Staging
-Managing levels throughout the signal chain:
-
-#### Proper Level Management
-- **Unity gain**: Each pedal outputs same level as input
-- **Strategic boosts**: Use clean boosts for solos
-- **Avoid clipping**: Don't overload later stages
-
-#### Troubleshooting Levels
-- **Too quiet**: Add clean boost or check pedal levels
-- **Too loud**: Reduce pedal outputs or use attenuator
-- **Distorted**: Check for clipping in signal chain
-
-## Genre-Specific Stacking
-
-### Ambient/Post-Rock
-\`\`\`
-Guitar → Volume Pedal → Reverb → Delay → Shimmer Reverb → Amp
-\`\`\`
-
-**Character:**
-- Swelling, atmospheric textures
-- Long, complex reverb tails
-- Ethereal, floating quality
-
-### Classic Rock
-\`\`\`
-Guitar → Wah → Overdrive → Delay → Reverb → Amp
-\`\`\`
-
-**Character:**
-- Expressive wah tones
-- Warm overdrive
-- Musical delay and reverb
-
-### Modern Metal
-\`\`\`
-Guitar → Noise Gate → Tube Screamer → High-Gain Amp → Gate → Delay
-\`\`\`
-
-**Character:**
-- Tight, controlled distortion
-- No unwanted noise
-- Precise, rhythmic delays
-
-## Common Stacking Mistakes
-
-### Problems to Avoid
-- **Too many effects**: Muddy, undefined sound
-- **Wrong order**: Poor interaction between pedals
-- **Level mismatches**: Some pedals too loud/quiet
-- **Ignoring amp**: Not considering amp's contribution
-
-### Solutions
-- **Start simple**: Add one effect at a time
-- **Listen critically**: Does each addition improve the sound?
-- **Match levels**: Use unity gain as starting point
-- **Consider context**: Will this work in a band mix?
-
-## Building Your Pedal Chain
-
-### Step-by-Step Approach
-1. **Start with basics**: Tuner, one drive pedal
-2. **Add modulation**: Chorus or phaser
-3. **Include time effects**: Delay and/or reverb
-4. **Expand gradually**: Add specialty effects as needed
-5. **Optimize order**: Experiment with different arrangements
-
-### Budget Considerations
-- **Core effects first**: Drive, delay, reverb
-- **Quality over quantity**: Better to have fewer good pedals
-- **Used market**: Many excellent pedals available used
-- **Multi-effects**: Consider for starting out or backup
-
-## Pro Tips for Pedal Stacking
-
-> **Serve the Music**: Every effect should enhance the song, not just sound cool.
-
-### Best Practices
-- **A/B test**: Compare with and without each effect
-- **Record yourself**: Sounds different in the room vs. recorded
-- **Band context**: How does it sit in the full mix?
-- **Venue considerations**: Some effects work better in certain spaces
-
-### Maintenance Tips
-- **Cable quality**: Use good cables throughout chain
-- **Power supply**: Isolated power prevents noise
-- **Regular cleaning**: Keep jacks and switches clean
-- **Backup plan**: Know how to bypass problematic pedals
-
-### Creative Exploration
-- **Break rules**: Try unconventional pedal orders
-- **Expression pedals**: Add real-time control
-- **Automation**: Use MIDI or switching systems
-- **Collaborate**: Learn from other players' setups
-
-Remember: Pedal stacking is about creating YOUR unique voice. Use these guidelines as starting points, but trust your ears and musical instincts above all!
-
-![Professional Pedalboard](https://images.unsplash.com/photo-1598986646512-9d24ccbe3a40?w=800&q=80)
-*Professional pedalboard showcasing advanced pedal stacking techniques*
-`
-  }
+//   {
+//     id: 5,
+//     title: "Wah & Filter Pedals",
+//     description: "Expressive tone shaping with wah and filter effects",
+//     duration: "14 min",
+//     type: "Filter",
+//     difficulty: "Beginner",
+//     thumbnail: "🎭",
+//     videoUrl: "https://www.youtube.com/watch?v=jZqJXFMhP4s", // Wah pedal tutorial
+//     notes: `# Wah & Filter Pedals
+
+// ## Understanding Wah Pedals
+
+// The wah pedal is one of the most expressive effects in guitar playing, allowing real-time control over your tone's frequency response.
+
+// ## How Wah Pedals Work
+
+// ### Basic Principle
+// - **Filter sweep**: Emphasizes different frequencies
+// - **Foot control**: Real-time expression
+// - **Vocal quality**: Mimics human vocal formants
+
+// ### Frequency Range
+// - **Heel down**: Emphasizes bass frequencies
+// - **Toe down**: Emphasizes treble frequencies
+// - **Middle position**: Balanced, often parked for fixed EQ
+
+// ## Types of Wah Pedals
+
+// ### Vintage-Style Wah
+// - **Sound**: Vocal, organic, slightly dark
+// - **Famous**: Original Cry Baby, Vox V847
+// - **Best for**: Classic rock, blues, vintage tones
+
+// ### Modern Wah
+// - **Sound**: Wider sweep, more extreme range
+// - **Features**: Often have multiple modes
+// - **Best for**: Modern rock, metal, experimental
+
+// ### Specific Models
+// #### Dunlop Cry Baby
+// - **Most popular**: Industry standard
+// - **Variations**: GCB95, 535Q (adjustable)
+// - **Sound**: Classic, reliable, familiar
+
+// #### Vox V847
+// - **Vintage spec**: Based on original Italian design
+// - **Sound**: Slightly different sweep than Cry Baby
+// - **Character**: Smoother, less aggressive
+
+// ## Wah Techniques
+
+// ### Basic Techniques
+
+// #### Full Sweep
+// - **Motion**: Heel to toe
+// - **Sound**: Classic "wah" vocal sound
+// - **Usage**: Emphasis, expression
+
+// #### Parked Wah
+// - **Position**: Fixed at specific point
+// - **Sound**: EQ boost at chosen frequency
+// - **Usage**: Lead tones, fixed filter effect
+
+// #### Slow Sweep
+// - **Motion**: Gradual heel-to-toe movement
+// - **Sound**: Smooth filter sweep
+// - **Usage**: Atmospheric, building tension
+
+// ### Advanced Techniques
+
+// #### Rhythmic Wah
+// Match wah movement to song rhythm:
+// - **On the beat**: Emphasize strong beats
+// - **Off-beat**: Syncopated, funky feel
+// - **Double-time**: Fast rhythmic patterns
+
+// #### Percussive Wah
+// Quick, sharp movements:
+// - **Heel stomp**: Emphasis on low frequencies
+// - **Toe tap**: Bright, cutting sound
+// - **Combination**: Rhythmic patterns
+
+// #### Wah + Picking
+// Coordinate with picking technique:
+// - **Attack + wah**: Emphasize note attacks
+// - **Sustained + sweep**: Long notes with movement
+// - **Muted + rhythmic**: Percussive combinations
+
+// ## Signal Chain Placement
+
+// ### Traditional Position
+// \`\`\`
+// Guitar → Wah → Drive → Modulation → Delay → Reverb → Amp
+// \`\`\`
+
+// Benefits:
+// - Most natural, responsive feel
+// - Best interaction with guitar signal
+// - Traditional sound most people expect
+
+// ### After Drive (Alternative)
+// \`\`\`
+// Guitar → Drive → Wah → Modulation → Delay → Reverb → Amp
+// \`\`\`
+
+// Benefits:
+// - Smoother, less aggressive sweep
+// - Different tonal character
+// - Some players prefer this sound
+
+// ## Musical Applications
+
+// ### Funk Guitar
+// Essential for classic funk:
+// - **Technique**: Rhythmic, percussive
+// - **Pattern**: Match to drum patterns
+// - **Examples**: "Shaft" theme, Parliament-Funkadelic
+
+// ### Classic Rock Solos
+// Expressive lead guitar:
+// - **Technique**: Melodic sweeps
+// - **Usage**: Emphasize important notes
+// - **Examples**: Hendrix, Clapton, Page
+
+// ### Blues Expression
+// Vocal-like phrasing:
+// - **Technique**: Slow, melodic movements
+// - **Usage**: Bend notes while sweeping
+// - **Goal**: Mimic human voice inflections
+
+// ### Modern Metal
+// Aggressive, precise movements:
+// - **Technique**: Fast, rhythmic patterns
+// - **Usage**: Accent rhythmic patterns
+// - **Examples**: Kirk Hammett, Tom Morello
+
+// ## Famous Wah Players
+
+// ### Jimi Hendrix
+// - **Pioneer**: Popularized wah pedal use
+// - **Technique**: Full sweeps, rhythmic patterns
+// - **Songs**: "Voodoo Child," "White Room"
+
+// ### Kirk Hammett (Metallica)
+// - **Style**: Fast, aggressive, rhythmic
+// - **Technique**: Precise, controlled movements
+// - **Songs**: "Enter Sandman," "One"
+
+// ### David Gilmour (Pink Floyd)
+// - **Style**: Melodic, atmospheric
+// - **Technique**: Slow, musical sweeps
+// - **Songs**: "Money," "Time"
+
+// ## Wah Settings and Modifications
+
+// ### Internal Adjustments
+// Many wahs have internal controls:
+// - **Vocal control**: Adjusts sweep range
+// - **Bias control**: Changes center frequency
+// - **Volume control**: Matches bypass level
+
+// ### Common Modifications
+// #### True Bypass
+// - **Benefit**: Better signal when off
+// - **Install**: Professional modification
+// - **Result**: Cleaner overall signal
+
+// #### LED Indicator
+// - **Benefit**: Shows when effect is on
+// - **Install**: Simple modification
+// - **Useful**: Dark stages, pedalboard setups
+
+// ## Filter Pedals (Related Effects)
+
+// ### Auto-Wah/Envelope Filter
+// Automatic wah response to playing dynamics:
+// - **Control**: Pick attack triggers filter
+// - **Sound**: Funky, responsive
+// - **Famous**: Mutron III, Boss AW-3
+
+// ### Talk Box
+// Articulates words through guitar:
+// - **How it works**: Speaker drives tube to mouth
+// - **Sound**: Robot/vocoder effect
+// - **Famous**: Peter Frampton, Roger Troutman
+
+// ### Vocal Formant Filter
+// Creates vowel sounds:
+// - **Control**: Often expression pedal
+// - **Sound**: "Oooh" to "Ahhh" vocal sounds
+// - **Usage**: Special effects, experimental
+
+// ## Practice Exercises
+
+// ### Basic Coordination
+// 1. **Simple riffs**: Play easy patterns while wah sweeping
+// 2. **Chord progressions**: Practice rhythm guitar + wah
+// 3. **Scale runs**: Combine scales with wah movement
+
+// ### Rhythmic Training
+// 1. **Match metronome**: Wah movement on beat
+// 2. **Subdivision practice**: Quarter, eighth, sixteenth notes
+// 3. **Polyrhythms**: Wah in different time signatures
+
+// ### Expression Development
+// 1. **Dynamic control**: Vary sweep speed and intensity
+// 2. **Musical phrasing**: Make wah movement melodic
+// 3. **Song application**: Add wah to favorite songs
+
+// ## Common Problems and Solutions
+
+// ### Issues
+// - **Volume drop**: When wah is engaged
+// - **Scratchy pot**: Dirty volume control
+// - **Inconsistent sweep**: Worn gear mechanism
+
+// ### Solutions
+// - **Volume matching**: Internal adjustment or modification
+// - **Cleaning**: Contact cleaner on potentiometer
+// - **Maintenance**: Regular cleaning and lubrication
+
+// ## Pro Tips
+
+// > **Less is More**: Don't use wah on every song. Save it for maximum impact.
+
+// ### Musical Guidelines
+// - **Serve the song**: Use wah musically, not just for effect
+// - **Practice timing**: Coordinate with rhythm section
+// - **Volume control**: Make sure levels match bypass
+// - **Genre appropriate**: Consider style and context
+
+// ### Creative Ideas
+// - **Backwards wah**: Record and reverse for unique sounds
+// - **Multiple wahs**: Different voices for different parts
+// - **Expression pedal**: Control other parameters via MIDI
+// - **Wah + pitch**: Combine with pitch bending for extreme effects
+
+// Remember: The wah pedal is an instrument itself. Master its expressive capabilities to add a new dimension to your guitar playing!
+
+// ![Wah Pedal in Action](https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?w=800&q=80)
+// *Classic wah pedal setup on a professional pedalboard*
+// `
+//   },
+//   {
+//     id: 6,
+//     title: "Stacking Pedals",
+//     description: "Advanced techniques for combining multiple effects pedals",
+//     duration: "28 min",
+//     type: "Advanced",
+//     difficulty: "Advanced",
+//     thumbnail: "🎛️",
+//     videoUrl: "https://www.youtube.com/watch?v=HNsQ3ckLt3k", // Pedal stacking guide
+//     notes: `# Stacking Pedals
+
+// ## The Art of Pedal Stacking
+
+// Pedal stacking is the practice of combining multiple effects to create complex, unique tones that single pedals cannot achieve alone.
+
+// ## Signal Chain Fundamentals
+
+// ### Basic Signal Flow
+// Understanding signal path is crucial for effective stacking:
+
+// \`\`\`
+// Guitar → Effects Chain → Amplifier → Speaker
+// \`\`\`
+
+// ### Standard Pedal Order
+// \`\`\`
+// Guitar → Tuner → Wah → Compression → Drive/Distortion → 
+// EQ → Modulation → Delay → Reverb → Amp
+// \`\`\`
+
+// ### Why Order Matters
+// Each pedal affects the signal feeding into the next:
+// - **Early effects**: Shape the core tone
+// - **Later effects**: Add texture and space
+// - **Wrong order**: Can create unwanted noise or poor interaction
+
+// ## Drive Pedal Stacking
+
+// ### Classic Combinations
+
+// #### Light Overdrive + Heavy Distortion
+// \`\`\`
+// Guitar → Light OD (always on) → Heavy Distortion (solo boost) → Amp
+// \`\`\`
+
+// **Benefits:**
+// - Consistent light overdrive for rhythm
+// - Heavy distortion for solos
+// - Smoother transition between clean and dirty
+
+// #### Tube Screamer + Amp Distortion
+// \`\`\`
+// Guitar → Tube Screamer → Already-driven amp
+// \`\`\`
+
+// **Purpose:**
+// - Tightens low end
+// - Boosts mids for cut
+// - Adds compression and sustain
+
+// ### Advanced Drive Stacking
+
+// #### Three-Tiered Approach
+// \`\`\`
+// Guitar → Clean Boost → Light OD → Heavy Distortion → Amp
+// \`\`\`
+
+// **Usage:**
+// 1. **Clean boost**: Always on, slight enhancement
+// 2. **Light OD**: Rhythm sections
+// 3. **Heavy distortion**: Lead solos
+
+// #### Fuzz + Overdrive
+// \`\`\`
+// Guitar → Fuzz → Overdrive → Amp
+// \`\`\`
+
+// **Result:**
+// - Overdrive smooths harsh fuzz edges
+// - Maintains fuzz character with more control
+// - Popular in psych/garage rock
+
+// ## Modulation Stacking
+
+// ### Time-Based Effects
+// Multiple delays and reverbs for complex textures:
+
+// #### Dual Delay Setup
+// \`\`\`
+// Guitar → Short Delay (120ms) → Long Delay (400ms) → Reverb → Amp
+// \`\`\`
+
+// **Effect:**
+// - Short delay: Rhythmic enhancement
+// - Long delay: Atmospheric wash
+// - Reverb: Final spatial enhancement
+
+// #### Ping-Pong + Hall Reverb
+// \`\`\`
+// Guitar → Ping-Pong Delay → Hall Reverb → Amp
+// \`\`\`
+
+// **Result:**
+// - Wide stereo image from ping-pong
+// - Natural space from reverb
+// - Complex, three-dimensional sound
+
+// ### Modulation Combinations
+
+// #### Chorus + Delay + Reverb
+// The classic clean guitar stack:
+// \`\`\`
+// Guitar → Chorus → Delay → Reverb → Amp
+// \`\`\`
+
+// **Character:**
+// - Chorus: Width and shimmer
+// - Delay: Rhythmic interest
+// - Reverb: Spatial depth
+
+// ## Creative Stacking Ideas
+
+// ### Unconventional Orders
+
+// #### Reverb Before Drive
+// \`\`\`
+// Guitar → Reverb → Overdrive → Amp
+// \`\`\`
+
+// **Effect:**
+// - Drives the reverb signal
+// - Creates compressed, sustained ambience
+// - Unique, atmospheric character
+
+// #### Delay Before Drive
+// \`\`\`
+// Guitar → Delay → Distortion → Amp
+// \`\`\`
+
+// **Result:**
+// - Distorts the delayed signal
+// - Creates rhythmic, aggressive textures
+// - Popular in industrial/experimental music
+
+// ### Parallel Processing
+// Running effects in parallel rather than series:
+
+// #### Wet/Dry Setup
+// \`\`\`
+// Guitar → Splitter → Path A (Clean) → Mixer → Amp
+//                   → Path B (Effects) →
+// \`\`\`
+
+// **Benefits:**
+// - Maintains note clarity
+// - Adds effects without muddying core tone
+// - Professional studio technique
+
+// ## Effects Loop Usage
+
+// ### Amp Effects Loop
+// \`\`\`
+// Guitar → Drive → Amp Input
+// Amp Send → Modulation → Delay → Reverb → Amp Return
+// \`\`\`
+
+// **Advantages:**
+// - Time-based effects stay clean
+// - Better interaction with preamp distortion
+// - More control over wet/dry balance
+
+// ### When to Use Effects Loop
+// - **Use loop for**: Delay, reverb, some modulation
+// - **Use front for**: Drive, wah, compression, some modulation
+// - **Experiment**: Every amp and player is different
+
+// ## Advanced Stacking Techniques
+
+// ### Switching Systems
+
+// #### Loop Switchers
+// Control multiple pedal chains:
+// - **A/B switching**: Choose between different effect chains
+// - **Blending**: Mix multiple chains together
+// - **Programmable**: Store preset combinations
+
+// #### MIDI Control
+// Synchronize multiple effects:
+// - **Tempo sync**: All delays match song tempo
+// - **Program changes**: Switch entire effect setups
+// - **Expression control**: Control multiple parameters
+
+// ### Gain Staging
+// Managing levels throughout the signal chain:
+
+// #### Proper Level Management
+// - **Unity gain**: Each pedal outputs same level as input
+// - **Strategic boosts**: Use clean boosts for solos
+// - **Avoid clipping**: Don't overload later stages
+
+// #### Troubleshooting Levels
+// - **Too quiet**: Add clean boost or check pedal levels
+// - **Too loud**: Reduce pedal outputs or use attenuator
+// - **Distorted**: Check for clipping in signal chain
+
+// ## Genre-Specific Stacking
+
+// ### Ambient/Post-Rock
+// \`\`\`
+// Guitar → Volume Pedal → Reverb → Delay → Shimmer Reverb → Amp
+// \`\`\`
+
+// **Character:**
+// - Swelling, atmospheric textures
+// - Long, complex reverb tails
+// - Ethereal, floating quality
+
+// ### Classic Rock
+// \`\`\`
+// Guitar → Wah → Overdrive → Delay → Reverb → Amp
+// \`\`\`
+
+// **Character:**
+// - Expressive wah tones
+// - Warm overdrive
+// - Musical delay and reverb
+
+// ### Modern Metal
+// \`\`\`
+// Guitar → Noise Gate → Tube Screamer → High-Gain Amp → Gate → Delay
+// \`\`\`
+
+// **Character:**
+// - Tight, controlled distortion
+// - No unwanted noise
+// - Precise, rhythmic delays
+
+// ## Common Stacking Mistakes
+
+// ### Problems to Avoid
+// - **Too many effects**: Muddy, undefined sound
+// - **Wrong order**: Poor interaction between pedals
+// - **Level mismatches**: Some pedals too loud/quiet
+// - **Ignoring amp**: Not considering amp's contribution
+
+// ### Solutions
+// - **Start simple**: Add one effect at a time
+// - **Listen critically**: Does each addition improve the sound?
+// - **Match levels**: Use unity gain as starting point
+// - **Consider context**: Will this work in a band mix?
+
+// ## Building Your Pedal Chain
+
+// ### Step-by-Step Approach
+// 1. **Start with basics**: Tuner, one drive pedal
+// 2. **Add modulation**: Chorus or phaser
+// 3. **Include time effects**: Delay and/or reverb
+// 4. **Expand gradually**: Add specialty effects as needed
+// 5. **Optimize order**: Experiment with different arrangements
+
+// ### Budget Considerations
+// - **Core effects first**: Drive, delay, reverb
+// - **Quality over quantity**: Better to have fewer good pedals
+// - **Used market**: Many excellent pedals available used
+// - **Multi-effects**: Consider for starting out or backup
+
+// ## Pro Tips for Pedal Stacking
+
+// > **Serve the Music**: Every effect should enhance the song, not just sound cool.
+
+// ### Best Practices
+// - **A/B test**: Compare with and without each effect
+// - **Record yourself**: Sounds different in the room vs. recorded
+// - **Band context**: How does it sit in the full mix?
+// - **Venue considerations**: Some effects work better in certain spaces
+
+// ### Maintenance Tips
+// - **Cable quality**: Use good cables throughout chain
+// - **Power supply**: Isolated power prevents noise
+// - **Regular cleaning**: Keep jacks and switches clean
+// - **Backup plan**: Know how to bypass problematic pedals
+
+// ### Creative Exploration
+// - **Break rules**: Try unconventional pedal orders
+// - **Expression pedals**: Add real-time control
+// - **Automation**: Use MIDI or switching systems
+// - **Collaborate**: Learn from other players' setups
+
+// Remember: Pedal stacking is about creating YOUR unique voice. Use these guidelines as starting points, but trust your ears and musical instincts above all!
+
+// ![Professional Pedalboard](https://images.unsplash.com/photo-1598986646512-9d24ccbe3a40?w=800&q=80)
+// *Professional pedalboard showcasing advanced pedal stacking techniques*
+// `
+//   }
 ];
 
 const getTypeColor = (type: string) => {
@@ -1259,6 +1258,7 @@ const getTypeColor = (type: string) => {
     case "Ambient": return "bg-purple-500/20 text-purple-400 border-purple-500/30";
     case "Modulation": return "bg-green-500/20 text-green-400 border-green-500/30";
     case "Filter": return "bg-yellow-500/20 text-yellow-400 border-yellow-500/30";
+    case "EQ": return "bg-orange-500/20 text-orange-400 border-orange-500/30";
     case "Advanced": return "bg-guitar-amber/20 text-guitar-amber border-guitar-amber/30";
     default: return "bg-muted text-muted-foreground";
   }

@@ -11,11 +11,11 @@ const tutorials = [
     id: 1,
     title: "Basic Chord Progressions",
     description: "Learn the most common chord progressions used in popular music",
-    duration: "15 min",
+    duration: "44 sec",
     difficulty: "Beginner",
     rating: 4.8,
     thumbnail: "🎸",
-    videoUrl: "https://youtu.be/gi9iY8ocLH4?list=RDgi9iY8ocLH4", // Khairiyat Piano Cover by Nakshatra Joshi
+    videoUrl: "https://youtu.be/0A8Ob8zsWtM?si=gI-CV1Z-xzNUN9DY", // Khairiyat Piano Cover by Nakshatra Joshi
     notes: `# Basic Chord Progressions
 
 ## Overview
@@ -59,280 +59,179 @@ Once comfortable with basic progressions, explore:
   },
   {
     id: 2,
-    title: "Fingerpicking Techniques",
-    description: "Master fingerpicking patterns for folk and classical guitar",
+    title: "Basic Song in Guitar Using Chords and Strings",
+    description: "Learn to play complete songs using fundamental chords and string techniques",
     duration: "22 min",
-    difficulty: "Intermediate",
+    difficulty: "Beginner",
     rating: 4.9,
     thumbnail: "🎵",
-    videoUrl: "https://www.youtube.com/watch?v=jdGhHt1SDwg", // Guitar fingerpicking tutorial
-    notes: `# Fingerpicking Techniques
+    videoUrl: "https://youtu.be/7Rb2CiXGsR0", // Guitar fingerpicking tutorial
+    notes: `# Basic Song in Guitar Using Chords and Strings
 
 ## Introduction
-Fingerpicking opens up a world of musical expression, allowing you to play melody, harmony, and rhythm simultaneously.
+Learn how to play complete songs by combining basic chords with simple string techniques. This tutorial focuses on practical application of fundamental guitar skills.
 
-## Basic Hand Position
-- **Thumb (p)**: Bass strings (E, A, D)
-- **Index (i)**: G string (3rd)
-- **Middle (m)**: B string (2nd)
-- **Ring (a)**: High E string (1st)
+## Essential Chords for Songs
+Master these basic open chords:
+- **G Major**: Most common and versatile chord
+- **C Major**: Smooth transition chord
+- **D Major**: Perfect for key changes
+- **Em (E minor)**: Adds emotional depth
+- **Am (A minor)**: Creates beautiful progressions
 
-## Fundamental Patterns
-
-### Pattern 1: p-i-m-a
+## Basic Chord Progression
+Most songs use simple progressions like:
 \`\`\`
-T: 1   2   3   4
-p   i   m   a
-\`\`\`
-
-### Pattern 2: Travis Picking
-\`\`\`
-T: 1   &   2   &   3   &   4   &
-p       i   p   m       i   p   m
+G - C - D - G (Classic country/folk)
+C - G - Am - F (Pop progression)
+Em - C - G - D (Emotional ballad)
 \`\`\`
 
-## Practice Exercises
+## String Techniques for Beginners
 
-### Exercise 1: Chord Arpeggios
-Practice these patterns on:
-- C major
-- A minor
-- F major
-- G major
+### Simple Strumming Patterns
+1. **Down-Down-Up-Up-Down-Up** (Most versatile)
+2. **Down-Down-Down-Down** (For slow songs)
+3. **Down-Up-Down-Up** (Medium tempo songs)
 
-### Exercise 2: Alternating Bass
-Combine bass notes with melody:
-1. Play bass note with thumb
-2. Add melody notes with fingers
-3. Maintain steady rhythm
+### Basic Fingerpicking
+- **Thumb**: Bass strings (E, A, D)
+- **Fingers**: Melody strings (G, B, E)
 
-## Common Mistakes to Avoid
-- ❌ Using fingernails that are too long
-- ❌ Tensing up the picking hand
-- ❌ Neglecting proper thumb technique
-- ❌ Playing too fast initially
+## Song Structure Basics
+Most songs follow this pattern:
+1. **Intro** - Simple chord progression
+2. **Verse** - Tell the story
+3. **Chorus** - Memorable hook
+4. **Bridge** - Musical break
+5. **Outro** - Conclusion
 
-## Famous Fingerpicking Songs
-- "Dust in the Wind" - Kansas
-- "Blackbird" - The Beatles
-- "The Sound of Silence" - Simon & Garfunkel
-- "Tears in Heaven" - Eric Clapton
+## Practice Tips
+1. Start with 2-chord songs
+2. Master chord transitions slowly
+3. Keep steady rhythm with metronome
+4. Practice chord changes without strumming first
+5. Focus on clean chord sounds
 
-![Fingerpicking Hand Position](https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&q=80)
-*Proper fingerpicking hand position*
+## Easy Songs to Start With
+- "Wonderwall" - Oasis (G, C, D, Em)
+- "Horse with No Name" - America (Em, D)
+- "Eleanor Rigby" - Beatles (Em, C)
+- "Bad Moon Rising" - CCR (D, A, G)
+
+## Common Beginner Mistakes
+- ❌ Rushing through chord changes
+- ❌ Not pressing strings firmly enough
+- ❌ Muting adjacent strings accidentally
+- ❌ Irregular strumming rhythm
+
+> **Pro Tip**: Master 4-5 basic chords and you can play hundreds of songs!
 `
   },
   {
     id: 3,
-    title: "Power Chords & Rock Riffs",
-    description: "Essential power chords and iconic rock riffs for electric guitar",
+    title: "Strumming Patterns Tutorial",
+    description: "Master essential strumming patterns and rhythm techniques for acoustic guitar",
     duration: "18 min",
     difficulty: "Beginner",
     rating: 4.7,
     thumbnail: "⚡",
-    videoUrl: "https://www.youtube.com/watch?v=BlHBKuZsxsM", // Power chords tutorial
-    notes: `# Power Chords & Rock Riffs
+    videoUrl: "https://youtu.be/6HaegfWW-fM", // Power chords tutorial
+    notes: `# Strumming Patterns Tutorial
 
-## What are Power Chords?
-Power chords are two-note chords consisting of the **root** and **fifth** of a scale. They're the foundation of rock, punk, and metal music.
+## Introduction
+Strumming patterns are the rhythmic foundation of guitar playing. Master these patterns to bring life and groove to your chord progressions.
 
-## Basic Power Chord Shapes
+## Basic Strumming Notation
+- **D** = Down strum (towards the floor)
+- **U** = Up strum (towards the ceiling)
+- **X** = Muted strum (palm touch strings)
 
-### Root on 6th String (Low E)
+## Essential Strumming Patterns
+
+### Pattern 1: Basic Down Strums
 \`\`\`
-E |---
-B |---
-G |---
-D |---
-A |-3-
-E |-1-
+Count: 1   2   3   4
+Strum: D   D   D   D
 \`\`\`
+*Perfect for slow ballads and learning chord changes*
 
-### Root on 5th String (A)
+### Pattern 2: Down-Up Pattern
 \`\`\`
-E |---
-B |---
-G |---
-D |-3-
-A |-1-
-E |---
+Count: 1   &   2   &   3   &   4   &
+Strum: D   U   D   U   D   U   D   U
 \`\`\`
+*Most versatile pattern for medium tempo songs*
 
-## Essential Power Chord Progressions
-
-### Classic Rock Progression
-- E5 - A5 - D5 - A5
-- G5 - C5 - D5 - G5
-
-### Punk Rock Pattern
-- A5 - D5 - E5 - D5
-
-## Iconic Rock Riffs to Learn
-
-### "Smoke on the Water" - Deep Purple
-One of the most recognizable riffs in rock history:
+### Pattern 3: Folk Strum
 \`\`\`
-e|------------------------
-B|------------------------
-G|------------------------
-D|---0-3-5---0-3--6-5-----
-A|------------------------
-E|------------------------
+Count: 1   &   2   &   3   &   4   &
+Strum: D       D   U   D   U   D   U
 \`\`\`
+*Great for folk, country, and acoustic rock*
 
-### "Come As You Are" - Nirvana
+### Pattern 4: Pop Rhythm
 \`\`\`
-e|------------------------
-B|------------------------
-G|------------------------
-D|------------------------
-A|---0-0-2-2-0-0----------
-E|---------------3-3-2-2--
+Count: 1   &   2   &   3   &   4   &
+Strum: D   U   D   U   X   U   D   U
 \`\`\`
-
-## Playing Tips
-1. **Palm Muting**: Rest your picking hand on the strings near the bridge
-2. **Down Picking**: Use downstrokes for a heavier sound
-3. **Distortion**: Power chords sound best with overdrive or distortion
-4. **Rhythm**: Focus on tight, precise timing
-
-## Gear Recommendations
-- **Amplifier**: Marshall or Fender with overdrive
-- **Effects**: Distortion/Overdrive pedal
-- **Guitar**: Solid body electric (Les Paul or Stratocaster style)
-
-> **Remember**: Power chords are moveable! Learn the shapes and slide them around the fretboard.
-
-## Next Level Techniques
-- **Octave doubling**: Add the octave for fuller sound
-- **Suspended chords**: Add sus2 or sus4 for variation
-- **Chromatic movement**: Use passing tones between chords
-`
-  },
-  {
-    id: 4,
-    title: "Advanced Soloing",
-    description: "Scales, bending, and expressive techniques for lead guitar",
-    duration: "35 min",
-    difficulty: "Advanced",
-    rating: 4.9,
-    thumbnail: "🎶",
-    videoUrl: "https://www.youtube.com/watch?v=r8hUfM5KhGQ", // Guitar solo techniques
-    notes: `# Advanced Soloing Techniques
-
-## Essential Scales for Soloing
-
-### Pentatonic Scales
-The backbone of rock and blues soloing:
-
-#### A Minor Pentatonic (Box 1)
-\`\`\`
-e|---5---8---
-B|---5---8---
-G|---5---7---
-D|---5---7---
-A|---5---7---
-E|---5---8---
-\`\`\`
-
-### Blues Scale
-Add the b5 to the minor pentatonic:
-- Root - b3 - 4 - b5 - 5 - b7
-
-### Major Scale Modes
-- **Ionian** (Major): Happy, bright
-- **Dorian**: Minor with natural 6
-- **Mixolydian**: Major with b7
-- **Aeolian** (Natural Minor): Dark, sad
+*Modern pop and contemporary songs*
 
 ## Advanced Techniques
 
-### String Bending
-1. **Half-step bends**: Most common in blues
-2. **Whole-step bends**: Dramatic effect
-3. **Pre-bends**: Bend then release
-4. **Bend and release**: Smooth transition
+### Palm Muting
+- Rest the side of your picking hand on the strings near the bridge
+- Creates a "chunky" percussive sound
+- Perfect for funk and reggae styles
 
-#### Bending Tips:
-- Use multiple fingers for support
-- Bend with your wrist, not just fingers
-- Practice pitch accuracy
-- Listen to the target note
+### Accent Strumming
+- Strum harder on certain beats for emphasis
+- Usually accent beats 1 and 3 in 4/4 time
+- Creates dynamic interest in your playing
 
-### Vibrato
-Add life to sustained notes:
-- **Finger vibrato**: Quick finger movements
-- **Wrist vibrato**: Wrist rotation
-- **Arm vibrato**: Slower, wider oscillation
+### Syncopated Rhythms
+- Emphasize off-beats (the "&" counts)
+- Common in reggae, ska, and Latin music
+- Adds groove and complexity
 
-### Legato Techniques
-#### Hammer-ons and Pull-offs
-\`\`\`
-Hammer-on:  5h7 (pick 5th fret, hammer to 7th)
-Pull-off:   7p5 (pick 7th fret, pull off to 5th)
-\`\`\`
+## Practice Tips
 
-#### Slides
-- **Legato slides**: Smooth connection
-- **Shift slides**: Position changes
-- **Into slides**: Slide into the target note
+### Start Slow
+1. Use a metronome at 60 BPM
+2. Focus on clean up-strums
+3. Keep your wrist relaxed
+4. Gradually increase tempo
 
-### Tapping
-Advanced two-hand technique:
-1. Tap with pick-hand finger
-2. Pull off to fret-hand finger
-3. Continue the pattern
+### Hand Position
+- **Picking Hand**: Relaxed wrist, slight angle
+- **Fretting Hand**: Keep thumb behind neck
+- **Posture**: Sit up straight, guitar at comfortable angle
 
-## Phrasing and Expression
+## Common Mistakes to Avoid
+- ❌ Tensing up your strumming arm
+- ❌ Hitting only the bottom strings on up-strums
+- ❌ Irregular timing between strums
+- ❌ Gripping the pick too tightly
 
-### Call and Response
-Structure your solos like a conversation:
-- **Phrase 1**: Musical "question"
-- **Phrase 2**: Musical "answer"
+## Songs to Practice With
+- **"Wonderwall" - Oasis**: D-D-U-D-U pattern
+- **"Horse with No Name" - America**: Simple down strums
+- **"Brown Eyed Girl" - Van Morrison**: Folk strum pattern
+- **"Hey Ya!" - OutKast**: Syncopated pop rhythm
 
-### Dynamic Control
-- **Volume swells**: Use volume knob or pedal
-- **Pick attack**: Vary your picking intensity
-- **Note spacing**: Use rests effectively
+## Rhythm Exercises
+1. **Metronome Practice**: Play patterns with different tempos
+2. **Chord Progression Practice**: Use patterns with G-C-D progression
+3. **Muted Strumming**: Practice patterns without pressing frets
+4. **Dynamic Control**: Vary volume within patterns
 
-### Melodic Development
-1. Start with simple motifs
-2. Develop through:
-   - Repetition
-   - Sequence
-   - Variation
-   - Contrast
+> **Pro Tip**: Your right hand (strumming) creates the groove - it's just as important as the left hand!
 
-## Practice Strategies
-
-### Daily Routine
-1. **Warm-up**: Scales and arpeggios (10 min)
-2. **Technique focus**: Bending, vibrato (15 min)
-3. **Improvisation**: Play over backing tracks (20 min)
-4. **Transcription**: Learn solos by ear (15 min)
-
-### Backing Track Practice
-Practice over different styles:
-- 12-bar blues in various keys
-- Rock progressions
-- Jazz standards
-- Modal vamps
-
-## Recommended Listening
-Study these master soloists:
-- **David Gilmour** (Pink Floyd): Melodic phrasing
-- **B.B. King**: Vibrato and bending
-- **John Mayer**: Modern blues approach
-- **Joe Satriani**: Technical mastery
-- **Gary Moore**: Emotional expression
-
-![Guitar Solo Position](https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=800&q=80)
-*Lead guitar positioning for optimal technique*
-
-## Final Tips
-> **Quality over quantity**: Play fewer notes with more expression rather than fast runs without feeling.
-
-Remember: The best solos tell a story. Focus on musical communication, not just technical display.
+## Next Steps
+- Learn to combine multiple patterns in one song
+- Practice with different time signatures (3/4, 6/8)
+- Experiment with fingerstyle patterns
+- Add percussive elements to your strumming
 `
   }
 ];
