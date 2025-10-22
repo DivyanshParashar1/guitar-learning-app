@@ -1,7 +1,5 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { FileText, ExternalLink } from "lucide-react";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -28,31 +26,21 @@ const NotesViewer = ({ isOpen, onClose, title, difficulty, notes }: NotesViewerP
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-background/95 backdrop-blur">
-        <DialogHeader className="p-6 pb-4 border-b border-border/50">
-          <div className="flex items-start justify-between gap-4">
-            <div className="space-y-2 flex-1">
-              <div className="flex items-center gap-2">
-                <FileText className="w-5 h-5 text-primary" />
-                <DialogTitle className="text-2xl">{title} - Notes</DialogTitle>
-              </div>
-              <Badge variant="outline" className={getDifficultyColor(difficulty)}>
-                {difficulty}
-              </Badge>
+      <DialogContent className="max-w-4xl h-[90vh] flex flex-col p-0 bg-background/95 backdrop-blur">
+        <DialogHeader className="p-6 pb-4 border-b border-border/50 flex-shrink-0">
+          <div className="space-y-2">
+            <div className="flex items-center gap-2">
+              <FileText className="w-5 h-5 text-primary" />
+              <DialogTitle className="text-2xl">{title} - Notes</DialogTitle>
             </div>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={onClose}
-              className="shrink-0"
-            >
-              Close
-            </Button>
+            <Badge variant="outline" className={getDifficultyColor(difficulty)}>
+              {difficulty}
+            </Badge>
           </div>
         </DialogHeader>
         
-        <ScrollArea className="flex-1 p-6">
-          <div className="prose prose-invert prose-lg max-w-none">
+        <div className="flex-1 overflow-y-auto p-6">
+          <div className="prose prose-invert prose-lg max-w-none break-words">
             <ReactMarkdown
               remarkPlugins={[remarkGfm]}
               rehypePlugins={[rehypeHighlight]}
@@ -112,7 +100,7 @@ const NotesViewer = ({ isOpen, onClose, title, difficulty, notes }: NotesViewerP
                   );
                 },
                 pre: ({ children }) => (
-                  <pre className="bg-muted/50 border border-border/50 rounded-lg p-4 overflow-x-auto mb-4">
+                  <pre className="bg-muted/50 border border-border/50 rounded-lg p-4 overflow-x-auto mb-4 whitespace-pre-wrap break-words">
                     {children}
                   </pre>
                 ),
@@ -163,7 +151,7 @@ const NotesViewer = ({ isOpen, onClose, title, difficulty, notes }: NotesViewerP
               {notes}
             </ReactMarkdown>
           </div>
-        </ScrollArea>
+        </div>
       </DialogContent>
     </Dialog>
   );
