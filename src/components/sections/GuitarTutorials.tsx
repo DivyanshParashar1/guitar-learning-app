@@ -5,6 +5,7 @@ import { Play, Clock, Star, FileText } from "lucide-react";
 import { useState } from "react";
 import VideoPlayer from "@/components/VideoPlayer";
 import NotesViewer from "@/components/NotesViewer";
+import { useChatbotContext } from "@/contexts/ChatbotContext";
 
 const tutorials = [
   {
@@ -248,19 +249,57 @@ const getDifficultyColor = (difficulty: string) => {
 const GuitarTutorials = () => {
   const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
   const [selectedNotes, setSelectedNotes] = useState<{ title: string; difficulty: string; notes: string } | null>(null);
+  const { setTopicContext } = useChatbotContext();
+
+  const handleVideoSelect = (tutorial: typeof tutorials[0]) => {
+    setSelectedVideo({ url: tutorial.videoUrl, title: tutorial.title });
+    // Set context for the chatbot
+    setTopicContext({
+      title: tutorial.title,
+      description: tutorial.description,
+      notes: tutorial.notes,
+      currentVideo: tutorial.videoUrl
+    });
+  };
+
+  const handleNotesSelect = (tutorial: typeof tutorials[0]) => {
+    setSelectedNotes({ 
+      title: tutorial.title, 
+      difficulty: tutorial.difficulty, 
+      notes: tutorial.notes 
+    });
+    // Set context for the chatbot
+    setTopicContext({
+      title: tutorial.title,
+      description: tutorial.description,
+      notes: tutorial.notes
+    });
+  };
+
+  const handleVideoClose = () => {
+    setSelectedVideo(null);
+    // Clear context when video is closed
+    setTopicContext(null);
+  };
+
+  const handleNotesClose = () => {
+    setSelectedNotes(null);
+    // Clear context when notes are closed
+    setTopicContext(null);
+  };
 
   return (
     <>
       <VideoPlayer
         isOpen={!!selectedVideo}
-        onClose={() => setSelectedVideo(null)}
+        onClose={handleVideoClose}
         videoUrl={selectedVideo?.url || ""}
         title={selectedVideo?.title || ""}
       />
       
       <NotesViewer
         isOpen={!!selectedNotes}
-        onClose={() => setSelectedNotes(null)}
+        onClose={handleNotesClose}
         title={selectedNotes?.title || ""}
         difficulty={selectedNotes?.difficulty || ""}
         notes={selectedNotes?.notes || ""}
@@ -310,7 +349,7 @@ const GuitarTutorials = () => {
                 <Button 
                   variant="musical" 
                   className="flex-1 group-hover:scale-105 transition-transform duration-300"
-                  onClick={() => setSelectedVideo({ url: tutorial.videoUrl, title: tutorial.title })}
+                  onClick={() => handleVideoSelect(tutorial)}
                 >
                   <Play className="w-4 h-4" />
                   Start Tutorial
@@ -319,11 +358,7 @@ const GuitarTutorials = () => {
                 <Button 
                   variant="outline" 
                   className="flex-1 group-hover:scale-105 transition-transform duration-300"
-                  onClick={() => setSelectedNotes({ 
-                    title: tutorial.title, 
-                    difficulty: tutorial.difficulty, 
-                    notes: tutorial.notes 
-                  })}
+                  onClick={() => handleNotesSelect(tutorial)}
                 >
                   <FileText className="w-4 h-4" />
                   Notes
