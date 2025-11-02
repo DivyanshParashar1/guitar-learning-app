@@ -40,21 +40,6 @@ To democratize guitar education by providing accessible, interactive, and compre
 
 ---
 
-## 👥 Team Information
-
-### Development Team
-- **Nakshatra Joshi** - 23CD3025
-  - Role: Lead Developer & UI/UX Designer
-  - Responsibilities: Frontend development, user interface design, video integration
-  
-- **Divyansh Parashar** - 23CD3015
-  - Role: Full-Stack Developer & Project Manager
-  - Responsibilities: Application architecture, AI integration, deployment
-  
-- **Rohan Singh** - 23CD3034
-  - Role: Backend Developer & Audio Engineer
-  - Responsibilities: Audio processing, tuner functionality, performance optimization
-
 ### Academic Context
 - **Course**: Multimedia Technologies (Semester 5)
 - **Institution**: RGIPT (Rajiv Gandhi Institute of Petroleum Technology)
