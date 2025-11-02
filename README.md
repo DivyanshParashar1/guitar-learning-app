@@ -184,7 +184,7 @@ npm run preview
 |-----------|------|------------------|------------|
 | **Nakshatra Joshi** | Lead Developer & UI/UX Designer | Frontend development, user interface design, video integration | 23CD3025 |
 | **Divyansh Parashar** | Full-Stack Developer & Project Manager | Application architecture, AI integration, deployment | 23CD3015 |
-| **Rohan Singh** | Backend Developer & Audio Engineer | Audio processing, tuner functionality, performance optimization | 23CD3034 |
+| **Rohan Singh** | Backend Developer & Audio Engineer | Lead Artist, Video Recording and Editing, Guitar Tutor, Audio Processing | 23CD3034 |
 
 </div>
 
